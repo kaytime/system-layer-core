@@ -1,4 +1,4 @@
-# Kaytime Layer core Meta package
+# Kaytime Layer core Meta package [![PackageCloud.](https://github.com/kaytime/system-layer-core/actions/workflows/build.yml/badge.svg)](https://github.com/kaytime/system-layer-core/actions/workflows/build.yml)
 
 This repository contains the source to create the `syteme-layer-core` metapackage.
 
