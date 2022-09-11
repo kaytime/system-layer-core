@@ -1,0 +1,9 @@
+# Comments start with a '#'.
+# Empty lines are ignored.
+
+#    = System Core layout =
+
+system-base-files=0.1.0+kaytime
+system-core-minimal
+system-core-standard
+

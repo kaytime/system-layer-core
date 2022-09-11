@@ -1,0 +1,8 @@
+# Compiled source #
+###################
+*.directory
+*.bak
+/.project
+*.db
+*.qmlc
+.DS_Store
