@@ -20,6 +20,8 @@ jobs:
           sudo gem install package_cloud
 
       - name: Build
+        env:
+          PROJECT_VERSION: ${{ github.event.head_commit.message }}
         run: |
           chmod +x gh-build.sh
           sudo ./gh-build.sh

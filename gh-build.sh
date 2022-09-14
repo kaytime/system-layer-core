@@ -11,7 +11,7 @@ printf >configuration "%s\n" \
 	"Priority: optional" \
 	"Homepage: https://kaytime.github.io" \
 	"Package: system-layer-core" \
-	"Version: $git_commit" \
+	"Version: $PROJECT_VERSION" \
 	"Maintainer: Stephane Tsana <stephanetse@gmail.com>" \
 	"Depends: $deps" \
 	"Architecture: all" \
