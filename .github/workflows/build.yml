@@ -23,9 +23,7 @@ jobs:
         env:
           PROJECT_VERSION: ${{github.event.head_commit.message}}
         run: |
-          chmod +x add-kaytime-repo.sh
           chmod +x gh-build.sh
-          sudo ./add-kaytime-repo.sh
           sudo ./gh-build.sh
 
       - name: Release
