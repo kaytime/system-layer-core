@@ -18,6 +18,7 @@ jobs:
       - name: Install dependencies.
         run: |
           sudo gem install package_cloud
+          curl -L https://packagecloud.io/kaytime/repo/gpgkey | apt-key add -;
 
       - name: Build
         env:
