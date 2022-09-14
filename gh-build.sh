@@ -11,8 +11,8 @@ deps=$(sed -e '/^#.*$/d; /^$/d; /^\s*$/d' package/dependencies | paste -sd ,)
 git_commit=$(git rev-parse --short HEAD)
 
 printf >configuration "%s\n" \
-	"Section: misc" \
-	"Priority: optional" \
+	"Section: admin" \
+	"Priority: required" \
 	"Homepage: https://kaytime.github.io" \
 	"Package: system-layer-core" \
 	"Version: $PROJECT_VERSION" \
