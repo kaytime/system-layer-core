@@ -23,6 +23,7 @@ jobs:
         env:
           PROJECT_VERSION: ${{github.event.head_commit.message}}
         run: |
+          echo ${{github.event}}
           chmod +x gh-build.sh
           sudo ./gh-build.sh
 
