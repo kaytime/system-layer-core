@@ -3,7 +3,7 @@
 
 #    = System Core layout =
 
-system-base-files=0.1.0+kaytime
+base-files=0.1.0+kaytime-testing
 system-core-minimal
 system-core-standard
 
