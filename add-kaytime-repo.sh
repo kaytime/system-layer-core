@@ -1,5 +1,7 @@
 #!/bin/bash
 
+GIT_CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+
 unknown_os() {
     echo "Unfortunately, your operating system distribution and version are not supported by this script."
     echo

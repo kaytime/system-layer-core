@@ -21,8 +21,7 @@ jobs:
 
       - name: Build
         env:
-          PROJECT_VERSION: ${{ github.event.head_commit.message }}
-          GIT_CURRENT_BRANCH: ${{ github.ref_name }}
+          PROJECT_VERSION: ${{github.event.head_commit.message}}
         run: |
           chmod +x add-kaytime-repo.sh
           chmod +x gh-build.sh
