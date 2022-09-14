@@ -1,7 +1,5 @@
 #! /bin/sh
 
-curl -s https://packagecloud.io/install/repositories/kaytime/$GIT_CURRENT_BRANCH/script.deb.sh | sudo bash
-
 # Build process
 
 apt-get --yes update
