@@ -6,11 +6,11 @@ git clone --branch $GIT_CURRENT_BRANCH https://github.com/kaytime/system-builder
 
 #	Wrap APT commands in functions.
 
-source /configs/scripts/apt_funcs.sh
+source builder/configs/scripts/apt_funcs.sh
 
 # Copy apt preference
 
-cp /configs/files/preferences /etc/apt/preferences
+cp builder/configs/files/preferences /etc/apt/preferences
 
 # Adding repo keys
 
