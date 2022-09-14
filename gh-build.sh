@@ -1,42 +1,6 @@
 #! /bin/sh
 
-GIT_CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
-
-git clone --branch $GIT_CURRENT_BRANCH https://github.com/kaytime/system-builder-kit builder
-
-#	Wrap APT commands in functions.
-
-source builder/configs/scripts/apt_funcs.sh
-
-# Copy apt preference
-
-cp builder/configs/files/preferences /etc/apt/preferences
-
-# Adding repo keys
-
-add_kaytime_key_compat
-
-while :; do
-	case $GIT_CURRENT_BRANCH in
-	stable)
-		add_kaytime_key_stable
-		break
-		;;
-	unstable)
-		add_kaytime_key_unstable
-		break
-		;;
-	testing)
-		add_kaytime_key_testing
-		break
-		;;
-	*)
-		echo "This branch $GIT_CURRENT_BRANCH doesn't not exist"
-		exit
-		break
-		;;
-	esac
-done
+curl -s https://packagecloud.io/install/repositories/kaytime/$GIT_CURRENT_BRANCH/script.deb.sh | sudo bash
 
 # Build process
 
